@@ -13,12 +13,12 @@ const styles = {
 };
 
 class TodoItem extends React.Component {
-    constructor() {
-        super();
+    constructor(props) {
+        super(props);
         this.state = {
             checked: false
-        }
-        this.update = this.update.bind(this)
+        };
+        this.update = this.update.bind(this);
         this.clickChecked = this.clickChecked.bind(this)
     }
 
@@ -30,7 +30,12 @@ class TodoItem extends React.Component {
         this.setState({
             checked: checked
         }, function () {
-
+            // let newList = this.state.todoList.map(function (item) {
+            //     return {id: item.id, title: item.title, checked: item.id === this.props.item.id ? checked : item.checked}
+            // });
+            // this.setState({
+            //     todoList: newList
+            // })
         })
     }
 

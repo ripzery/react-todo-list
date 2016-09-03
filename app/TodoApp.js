@@ -4,6 +4,7 @@ import Paper from 'material-ui/Paper';
 import {List} from 'material-ui/List';
 import TodoInput from './TodoInput'
 import TodoItem from './TodoItem'
+import TodoRemove from './TodoRemove'
 
 const styles = {
     textCenter: {
@@ -33,8 +34,14 @@ class TodoApp extends React.Component {
 
     render() {
         let items = this.state.todoList.map(function (item) {
-            return <TodoItem key={item.id} item={item}/>
+            return <TodoItem key={item.id} item={item} checked={item.checked}/>
         });
+
+        let checkedItem = this.state.todoList.filter(function (item) {
+            return item.checked
+        });
+
+        console.log(checkedItem);
 
         return (
             <Row>

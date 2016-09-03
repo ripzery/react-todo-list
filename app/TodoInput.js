@@ -54,7 +54,7 @@ class TodoInput extends React.Component {
                            ref="text"
                            onChange={this.update}
                            maxLength={this.props.max}/>
-                <FlatButton label={"เพิ่ม"} primary={true} disabled={this.state.todoText.length==0}
+                <FlatButton label={"เพิ่มเลย"} primary={true} disabled={this.state.todoText.length==0}
                             onClick={this.addItem}/>
             </div>
         );
@@ -62,7 +62,7 @@ class TodoInput extends React.Component {
 }
 
 TodoInput.defaultProps = {
-    hintText: "ค่อยๆกรอกลงไปนะ..."
+    hintText: "ค่อยๆกรอกนะ..."
 };
 
 export default TodoInput;
