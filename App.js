@@ -7,6 +7,7 @@ import FlatButton from 'material-ui/FlatButton';
 import TextField from 'material-ui/TextField';
 import {List, ListItem} from 'material-ui/List';
 import Checkbox from 'material-ui/Checkbox';
+import Paper from 'material-ui/Paper';
 
 injectTapEventPlugin();
 
@@ -22,7 +23,8 @@ const styles = {
     },
     textUnchecked: {
         backgroundColor: "#eeeeee"
-    }
+    },
+    paper: {margin: 16, padding: 16}
 }
 
 class App extends React.Component {
@@ -62,13 +64,15 @@ class TodoApp extends React.Component {
             <Row>
                 <Col sm={3}/>
                 <Col sm={6}>
-                    <div>
-                        <TodoTitle />
-                        <TodoInput max={20} ref="todo" update={this.update}/>
-                        <List>
-                            {items}
-                        </List>
-                    </div>
+                    <Paper style={styles.paper} zDepth={1}>
+                        <div>
+                            <TodoTitle />
+                            <TodoInput max={20} ref="todo" update={this.update}/>
+                            <List>
+                                {items}
+                            </List>
+                        </div>
+                    </Paper>
                 </Col>
             </Row>
         );
@@ -137,14 +141,13 @@ class TodoItem extends React.Component {
 
     render() {
         return (
-            <ListItem style={ this.state.checked ? styles.textChecked : styles.textUnchecked} primaryText={this.props.item.title}
+            <ListItem style={ this.state.checked ? styles.textChecked : styles.textUnchecked}
+                      primaryText={this.props.item.title}
                       leftCheckbox={<Checkbox checked={this.state.checked} onCheck={this.clickChecked}/>}/>
         );
     }
 }
 
-const TodoTitle = () =>
-        <h1 style={styles.textCenter}>Todo List</h1>
-    ;
+const TodoTitle = () => <h1 style={styles.textCenter}>Todo List</h1>;
 
 export default App
