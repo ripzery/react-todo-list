@@ -64,7 +64,7 @@ class TodoApp extends React.Component {
             <Row>
                 <Col sm={3}/>
                 <Col sm={6}>
-                    <Paper style={styles.paper} zDepth={1}>
+                    <Paper style={styles.paper} zDepth={2}>
                         <div>
                             <TodoTitle />
                             <TodoInput max={20} ref="todo" update={this.update}/>
@@ -88,6 +88,7 @@ class TodoInput extends React.Component {
         };
         this.update = this.update.bind(this);
         this.addItem = this.addItem.bind(this);
+        this.pressEnter = this.pressEnter.bind(this)
     }
 
     update(e) {
@@ -106,12 +107,25 @@ class TodoInput extends React.Component {
 
     }
 
+    pressEnter(e) {
+        if (e.keyCode == 13) {
+            this.addItem();
+            return true
+        }
+        return false
+    }
+
     render() {
         return (
             <div style={styles.textCenter}>
-                <TextField hintText="Hint Text" value={this.state.todoText} ref="text" onChange={this.update}
+                <TextField hintText="Hint Text"
+                           value={this.state.todoText}
+                           onKeyDown={this.pressEnter}
+                           ref="text"
+                           onChange={this.update}
                            maxLength={this.props.max}/>
-                <FlatButton label={"add"} primary={true} onClick={this.addItem}/>
+                <FlatButton label={"add"} primary={true} disabled={this.state.todoText.length==0}
+                            onClick={this.addItem}/>
             </div>
         );
     }
