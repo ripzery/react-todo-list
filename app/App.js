@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {Container, Row, Col, Visible, Hidden} from 'react-grid-system';
 import injectTapEventPlugin from 'react-tap-event-plugin';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+import MuiThemeProvider from '../node_modules/material-ui/styles/MuiThemeProvider';
 import FlatButton from 'material-ui/FlatButton';
 import TextField from 'material-ui/TextField';
 import {List, ListItem} from 'material-ui/List';
@@ -118,7 +118,7 @@ class TodoInput extends React.Component {
     render() {
         return (
             <div style={styles.textCenter}>
-                <TextField hintText="Hint Text"
+                <TextField hintText={this.props.hintText}
                            value={this.state.todoText}
                            onKeyDown={this.pressEnter}
                            ref="text"
@@ -161,6 +161,10 @@ class TodoItem extends React.Component {
         );
     }
 }
+
+TodoInput.defaultProps = {
+    hintText: "Enter Item..."
+};
 
 const TodoTitle = () => <h1 style={styles.textCenter}>Todo List</h1>;
 
