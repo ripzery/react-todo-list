@@ -62,7 +62,7 @@ class TodoInput extends React.Component {
 }
 
 TodoInput.defaultProps = {
-    hintText: "Enter Item..."
+    hintText: "ค่อยๆกรอกลงไปนะ..."
 };
 
 export default TodoInput;

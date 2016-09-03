@@ -8,7 +8,7 @@ const styles = {
         textDecoration: "line-through"
     },
     textUnchecked: {
-        backgroundColor: "#eeeeee"
+        backgroundColor: "#fafafa"
     }
 };
 
