@@ -2,9 +2,9 @@ import React from 'react';
 import {Container, Row, Col, Visible, Hidden} from 'react-grid-system';
 import Paper from 'material-ui/Paper';
 import {List} from 'material-ui/List';
-import TodoInput from './TodoInput'
-import TodoItem from './TodoItem'
-import TodoRemove from './TodoRemove'
+import TodoInput from './../components/TodoInput'
+import TodoItem from './../components/TodoItem'
+import TodoRemove from './../components/TodoRemove'
 
 const styles = {
     textCenter: {
