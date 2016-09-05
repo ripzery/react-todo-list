@@ -63,6 +63,6 @@ class TodoApp extends React.Component {
     }
 }
 
-const TodoTitle = () => <h1 style={styles.textCenter}>อันนี้พลาดไม่ได้</h1>;
+const TodoTitle = () => <h1 style={styles.textCenter}>อันนี้ต้องจด</h1>;
 
 export default TodoApp;
