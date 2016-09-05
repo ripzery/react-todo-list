@@ -5,7 +5,6 @@ import TodoItem from '../components/TodoItem'
 import React from 'react'
 
 const TodoList = ({todos, onTodoClick}) => {
-    console.log('TodoList', todos)
     return (
         <List>
             {todos.map(todo =>

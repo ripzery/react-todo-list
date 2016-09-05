@@ -30,12 +30,11 @@ class TodoInput extends React.Component {
     }
 
     addItem() {
-        // this.props.update();
         let title = this.state.todoText;
         this.setState({
             todoText: ""
         }, function () {
-            this.props.dispatch(addTodo(title));
+            this.props.onAddTodo(title)
         });
     }
 
@@ -67,4 +66,12 @@ TodoInput.defaultProps = {
     hintText: "ค่อยๆกรอกนะ..."
 };
 
-export default connect()(TodoInput);
+const mapDispatchToProps = (dispatch) => {
+    return {
+        onAddTodo: (title) => {
+            dispatch(addTodo(title))
+        }
+    }
+};
+
+export default connect(null, mapDispatchToProps)(TodoInput);
