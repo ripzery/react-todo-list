@@ -1,4 +1,4 @@
-let nextTodoId = 0
+let nextTodoId = 0;
 export const addTodo = (tite) => {
     return {
         type: 'ADD_TODO',

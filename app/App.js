@@ -6,11 +6,15 @@ import TodoApp from './containers/TodoApp'
 injectTapEventPlugin();
 
 class App extends React.Component {
+    constructor(){
+        super();
+    }
+
     render() {
         return (
-            <MuiThemeProvider >
-                <TodoApp />
-            </MuiThemeProvider>
+                <MuiThemeProvider >
+                    <TodoApp />
+                </MuiThemeProvider>
         );
     }
 }
