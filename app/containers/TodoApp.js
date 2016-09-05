@@ -2,6 +2,9 @@ import React from 'react';
 import {Container, Row, Col, Visible, Hidden} from 'react-grid-system';
 import Paper from 'material-ui/Paper';
 import {List} from 'material-ui/List';
+import TodoList from '../containers/TodoList'
+import { connect } from 'react-redux'
+import { addTodo }from '../actions/TodoAction'
 import TodoInput from './../components/TodoInput'
 import TodoItem from './../components/TodoItem'
 import TodoRemove from './../components/TodoRemove'
@@ -30,6 +33,7 @@ class TodoApp extends React.Component {
         this.setState({
             todoList: this.state.todoList.concat(newItem)
         })
+        
     }
 
     render() {
@@ -41,8 +45,6 @@ class TodoApp extends React.Component {
             return item.checked
         });
 
-        console.log(checkedItem);
-
         return (
             <Row>
                 <Col sm={3}/>
@@ -51,9 +53,7 @@ class TodoApp extends React.Component {
                         <div>
                             <TodoTitle />
                             <TodoInput max={20} ref="todo" update={this.update}/>
-                            <List>
-                                {items}
-                            </List>
+                            <TodoList />
                             <TodoRemove />
                         </div>
                     </Paper>
@@ -64,5 +64,8 @@ class TodoApp extends React.Component {
 }
 
 const TodoTitle = () => <h1 style={styles.textCenter}>อันนี้ต้องจด</h1>;
+
+
+/* Connect todo app to redux */
 
 export default TodoApp;

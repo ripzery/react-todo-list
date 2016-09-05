@@ -1,5 +1,5 @@
 let nextTodoId = 0;
-export const addTodo = (tite) => {
+export const addTodo = (title) => {
     return {
         type: 'ADD_TODO',
         id: nextTodoId++,

@@ -1,6 +1,8 @@
 import React from 'react';
 import FlatButton from 'material-ui/FlatButton';
 import TextField from 'material-ui/TextField';
+import {connect} from 'react-redux'
+import {addTodo} from '../actions/TodoAction'
 
 const styles = {
     textCenter: {
@@ -28,13 +30,13 @@ class TodoInput extends React.Component {
     }
 
     addItem() {
-        this.props.update();
+        // this.props.update();
+        let title = this.state.todoText;
         this.setState({
             todoText: ""
         }, function () {
-
+            this.props.dispatch(addTodo(title));
         });
-
     }
 
     pressEnter(e) {
@@ -65,4 +67,4 @@ TodoInput.defaultProps = {
     hintText: "ค่อยๆกรอกนะ..."
 };
 
-export default TodoInput;
+export default connect()(TodoInput);

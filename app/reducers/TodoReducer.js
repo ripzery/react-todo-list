@@ -1,3 +1,5 @@
+import { combineReducers } from 'redux'
+
 const todo = (state = 0, action) =>{
     switch (action.type) {
         case 'ADD_TODO':
@@ -36,4 +38,4 @@ const todos = (state = [], action) => {
     }
 };
 
-export default todos
+export default combineReducers({todos})

@@ -12,40 +12,10 @@ const styles = {
     }
 };
 
-class TodoItem extends React.Component {
-    constructor(props) {
-        super(props);
-        this.state = {
-            checked: false
-        };
-        this.update = this.update.bind(this);
-        this.clickChecked = this.clickChecked.bind(this)
-    }
-
-    update(e) {
-        console.log(e.target.value)
-    }
-
-    clickChecked(ev, checked) {
-        this.setState({
-            checked: checked
-        }, function () {
-            // let newList = this.state.todoList.map(function (item) {
-            //     return {id: item.id, title: item.title, checked: item.id === this.props.item.id ? checked : item.checked}
-            // });
-            // this.setState({
-            //     todoList: newList
-            // })
-        })
-    }
-
-    render() {
-        return (
-            <ListItem style={ this.state.checked ? styles.textChecked : styles.textUnchecked}
-                      primaryText={this.props.item.title}
-                      leftCheckbox={<Checkbox checked={this.state.checked} onCheck={this.clickChecked}/>}/>
-        );
-    }
-}
+const TodoItem = ({ onClick, checked, title }) => (
+    <ListItem style={ checked ? styles.textChecked : styles.textUnchecked}
+              primaryText={ title }
+              leftCheckbox={<Checkbox checked={checked} onCheck={onClick}/>}/>
+);
 
 export default TodoItem
