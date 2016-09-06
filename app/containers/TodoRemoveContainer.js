@@ -5,7 +5,7 @@ import {removeTodo} from '../actions/TodoAction'
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        onRemoveClick: (ids) => {
+        removeTodos: (ids) => () => {
             dispatch(removeTodo(ids))
         }
     }
@@ -13,8 +13,8 @@ const mapDispatchToProps = (dispatch) => {
 
 const mapStateToProps = (state) => {
     return {
-        todos: state.todos
+        checkedTodos: state.todos.filter(t => t.checked)
     }
 };
 
-export default connect(null, mapDispatchToProps)(TodoRemove)
+export default connect(mapStateToProps, mapDispatchToProps)(TodoRemove)

@@ -7,14 +7,23 @@ const styles = {
         marginRight: 16,
         marginTop: 16
     }
-}
+};
 
-const TodoRemove = ({onRemoveClick, todos}) => {
+const shouldEnabledRemove = (todos) => {
+    return todos.length === 0
+};
+
+const getRemovedTodosId = (checkedTodo) => () => {
+    var ids = checkedTodo.filter(t => t.checked).map(t => t.id);
+    return ids
+};
+
+const TodoRemove = ({checkedTodos, removeTodos}) => {
     return (
         <div style={styles.remove}>
-            <FlatButton disabled={todos.filter(t => t.checked).length > 0} label="Remove" onClick={onRemoveClick(todos.filter(t => t.checked).map(t => t.id))} secondary={true}/>
+            <FlatButton disabled={shouldEnabledRemove(checkedTodos)} label="Remove" onClick={removeTodos(getRemovedTodosId(checkedTodos))} secondary={true}/>
         </div>
     );
-}
+};
 
 export default TodoRemove

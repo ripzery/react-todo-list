@@ -3,8 +3,6 @@ import {Container, Row, Col, Visible, Hidden} from 'react-grid-system';
 import Paper from 'material-ui/Paper';
 import {List} from 'material-ui/List';
 import TodoList from '../containers/TodoList'
-import { connect } from 'react-redux'
-import { addTodo }from '../actions/TodoAction'
 import TodoInput from './../components/TodoInput'
 import TodoItem from './../components/TodoItem'
 import TodoRemoveContainer from './../containers/TodoRemoveContainer'

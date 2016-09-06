@@ -31,6 +31,7 @@ class TodoInput extends React.Component {
 
     addItem() {
         let title = this.state.todoText;
+        console.log(title)
         this.setState({
             todoText: ""
         }, function () {

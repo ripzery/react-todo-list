@@ -33,9 +33,9 @@ const todos = (state = [], action) => {
                 todo(t, action)
             );
         case 'REMOVE_TODO':
-            return state.filter(t => {
-                return action.ids.contains(t.id)
-            });
+            return state.filter(t =>
+                !t.checked
+            );
         default:
             return state
     }
