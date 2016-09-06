@@ -14,3 +14,10 @@ export const toggleTodo = (id) => {
         id
     }
 };
+
+export const removeTodo = (ids) => {
+    return {
+        type: 'REMOVE_TODO',
+        ids
+    }
+};

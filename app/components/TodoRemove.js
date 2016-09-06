@@ -9,18 +9,12 @@ const styles = {
     }
 }
 
-class TodoRemove extends React.Component {
-    constructor(){
-        super();
-    }
-
-    render(){
-        return (
-            <div style={styles.remove}>
-                <FlatButton disabled={!this.props.removeable} label="Remove" secondary={true} />
-            </div>
-        );
-    }
+const TodoRemove = ({onRemoveClick, todos}) => {
+    return (
+        <div style={styles.remove}>
+            <FlatButton disabled={todos.filter(t => t.checked).length > 0} label="Remove" onClick={onRemoveClick(todos.filter(t => t.checked).map(t => t.id))} secondary={true}/>
+        </div>
+    );
 }
 
 export default TodoRemove

@@ -12,7 +12,6 @@ const todo = (state = 0, action) =>{
             if(state.id !== action.id){
                 return state
             }
-
             return {
                 ...state,
                 checked: !state.checked
@@ -33,6 +32,10 @@ const todos = (state = [], action) => {
             return state.map(t =>
                 todo(t, action)
             );
+        case 'REMOVE_TODO':
+            return state.filter(t => {
+                return action.ids.contains(t.id)
+            });
         default:
             return state
     }

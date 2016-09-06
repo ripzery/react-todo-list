@@ -7,7 +7,7 @@ import { connect } from 'react-redux'
 import { addTodo }from '../actions/TodoAction'
 import TodoInput from './../components/TodoInput'
 import TodoItem from './../components/TodoItem'
-import TodoRemove from './../components/TodoRemove'
+import TodoRemoveContainer from './../containers/TodoRemoveContainer'
 
 const styles = {
     textCenter: {
@@ -54,7 +54,7 @@ class TodoApp extends React.Component {
                             <TodoTitle />
                             <TodoInput max={20} ref="todo" update={this.update}/>
                             <TodoList />
-                            <TodoRemove />
+                            <TodoRemoveContainer />
                         </div>
                     </Paper>
                 </Col>
