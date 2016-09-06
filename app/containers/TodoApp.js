@@ -15,29 +15,21 @@ const styles = {
     paper: {marginTop: 56, padding: 16}
 }
 
-class TodoApp extends React.Component {
-    constructor() {
-        super();
-    }
-
-    render() {
-        return (
-            <Row>
-                <Col sm={3}/>
-                <Col sm={6}>
-                    <Paper style={styles.paper} zDepth={2}>
-                        <div>
-                            <TodoTitle />
-                            <TodoInput max={20} ref="todo"/>
-                            <TodoList />
-                            <TodoRemoveContainer />
-                        </div>
-                    </Paper>
-                </Col>
-            </Row>
-        );
-    }
-}
+const TodoApp = () => (
+    <Row>
+        <Col sm={3}/>
+        <Col sm={6}>
+            <Paper style={styles.paper} zDepth={2}>
+                <div>
+                    <TodoTitle />
+                    <TodoInput max={20}/>
+                    <TodoList />
+                    <TodoRemoveContainer />
+                </div>
+            </Paper>
+        </Col>
+    </Row>
+);
 
 const TodoTitle = () => <h1 style={styles.textCenter}>อันนี้ต้องจด</h1>;
 
