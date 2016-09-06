@@ -15,9 +15,8 @@ export const toggleTodo = (id) => {
     }
 };
 
-export const removeTodo = (ids) => {
+export const removeTodo = () => {
     return {
-        type: 'REMOVE_TODO',
-        ids
+        type: 'REMOVE_TODO'
     }
 };

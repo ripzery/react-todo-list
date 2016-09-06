@@ -12,7 +12,7 @@ const styles = {
         textAlign: "center",
         float: "center"
     },
-    paper: {margin: 16, padding: 16}
+    paper: {marginTop: 56, padding: 16}
 }
 
 class TodoApp extends React.Component {

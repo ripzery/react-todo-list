@@ -5,8 +5,8 @@ import {removeTodo} from '../actions/TodoAction'
 
 const mapDispatchToProps = (dispatch) => {
     return {
-        removeTodos: (ids) => () => {
-            dispatch(removeTodo(ids))
+        removeTodos: () => () => {
+            dispatch(removeTodo())
         }
     }
 };
