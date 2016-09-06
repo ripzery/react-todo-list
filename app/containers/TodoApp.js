@@ -18,31 +18,9 @@ const styles = {
 class TodoApp extends React.Component {
     constructor() {
         super();
-        this.state = {
-            todoList: [],
-            doneList: []
-        }
-
-        this.update = this.update.bind(this);
-    }
-
-    update(e) {
-        var newItem = {id: this.state.todoList.length + 1, title: this.refs.todo.refs.text.getValue(), checked: false};
-        this.setState({
-            todoList: this.state.todoList.concat(newItem)
-        })
-        
     }
 
     render() {
-        let items = this.state.todoList.map(function (item) {
-            return <TodoItem key={item.id} item={item} checked={item.checked}/>
-        });
-
-        let checkedItem = this.state.todoList.filter(function (item) {
-            return item.checked
-        });
-
         return (
             <Row>
                 <Col sm={3}/>
@@ -50,7 +28,7 @@ class TodoApp extends React.Component {
                     <Paper style={styles.paper} zDepth={2}>
                         <div>
                             <TodoTitle />
-                            <TodoInput max={20} ref="todo" update={this.update}/>
+                            <TodoInput max={20} ref="todo"/>
                             <TodoList />
                             <TodoRemoveContainer />
                         </div>

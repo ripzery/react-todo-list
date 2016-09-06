@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="bee08312-2f25-4630-8637-65107a26da5a" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/actions/TodoAction.js" afterPath="$PROJECT_DIR$/app/actions/TodoAction.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/components/TodoRemove.js" afterPath="$PROJECT_DIR$/app/components/TodoRemove.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/containers/TodoApp.js" afterPath="$PROJECT_DIR$/app/containers/TodoApp.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/containers/TodoRemoveContainer.js" afterPath="$PROJECT_DIR$/app/containers/TodoRemoveContainer.js" />
     </list>
     <ignored path="react-lab-01.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,18 +28,12 @@
       <file leaf-file-name="TodoApp.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/containers/TodoApp.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="67">
-              <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+            <state relative-caret-position="89">
+              <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
                 <element signature="e#425#485#0" expanded="false" />
-                <element signature="n#!!block;n#constructor#0;n#TodoApp#0" expanded="false" />
-                <element signature="e#628#690#0" expanded="false" />
-                <element signature="n#!!block;n#update#0;n#TodoApp#0" expanded="false" />
-                <element signature="e#903#972#0" expanded="false" />
-                <element signature="e#1065#1156#0" expanded="false" />
-                <element signature="e#1229#1272#0" expanded="false" />
-                <element signature="e#1874#1905#0" expanded="false" />
+                <element signature="e#1206#1237#0" expanded="false" />
               </folding>
             </state>
           </provider>
@@ -198,7 +189,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="52412000" />
+    <option name="totallyTimeSpent" value="52635000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="746" height="800" extended-state="0" />
@@ -265,13 +256,7 @@
           <folding>
             <element signature="e#0#26#0" expanded="true" />
             <element signature="e#425#485#0" expanded="false" />
-            <element signature="n#!!block;n#constructor#0;n#TodoApp#0" expanded="false" />
-            <element signature="e#628#690#0" expanded="false" />
-            <element signature="n#!!block;n#update#0;n#TodoApp#0" expanded="false" />
-            <element signature="e#903#972#0" expanded="false" />
-            <element signature="e#1065#1156#0" expanded="false" />
-            <element signature="e#1229#1272#0" expanded="false" />
-            <element signature="e#1874#1905#0" expanded="false" />
+            <element signature="e#1206#1237#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -447,13 +432,7 @@
           <folding>
             <element signature="e#0#26#0" expanded="true" />
             <element signature="e#425#485#0" expanded="false" />
-            <element signature="n#!!block;n#constructor#0;n#TodoApp#0" expanded="false" />
-            <element signature="e#628#690#0" expanded="false" />
-            <element signature="n#!!block;n#update#0;n#TodoApp#0" expanded="false" />
-            <element signature="e#903#972#0" expanded="false" />
-            <element signature="e#1065#1156#0" expanded="false" />
-            <element signature="e#1229#1272#0" expanded="false" />
-            <element signature="e#1874#1905#0" expanded="false" />
+            <element signature="e#1206#1237#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -658,18 +637,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/containers/TodoApp.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="67">
-          <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
+        <state relative-caret-position="89">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
             <element signature="e#425#485#0" expanded="false" />
-            <element signature="n#!!block;n#constructor#0;n#TodoApp#0" expanded="false" />
-            <element signature="e#628#690#0" expanded="false" />
-            <element signature="n#!!block;n#update#0;n#TodoApp#0" expanded="false" />
-            <element signature="e#903#972#0" expanded="false" />
-            <element signature="e#1065#1156#0" expanded="false" />
-            <element signature="e#1229#1272#0" expanded="false" />
-            <element signature="e#1874#1905#0" expanded="false" />
+            <element signature="e#1206#1237#0" expanded="false" />
           </folding>
         </state>
       </provider>
