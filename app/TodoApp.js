@@ -37,12 +37,6 @@ class TodoApp extends React.Component {
             return <TodoItem key={item.id} item={item} checked={item.checked}/>
         });
 
-        let checkedItem = this.state.todoList.filter(function (item) {
-            return item.checked
-        });
-
-        console.log(checkedItem);
-
         return (
             <Row>
                 <Col sm={3}/>

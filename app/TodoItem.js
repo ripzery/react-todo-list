@@ -22,20 +22,13 @@ class TodoItem extends React.Component {
         this.clickChecked = this.clickChecked.bind(this)
     }
 
-    update(e) {
-        console.log(e.target.value)
-    }
+    update(e) {}
 
     clickChecked(ev, checked) {
         this.setState({
             checked: checked
         }, function () {
-            // let newList = this.state.todoList.map(function (item) {
-            //     return {id: item.id, title: item.title, checked: item.id === this.props.item.id ? checked : item.checked}
-            // });
-            // this.setState({
-            //     todoList: newList
-            // })
+            
         })
     }
 
