@@ -4,7 +4,6 @@ import Paper from 'material-ui/Paper';
 import {List} from 'material-ui/List';
 import TodoList from '../containers/TodoList'
 import TodoInput from './../components/TodoInput'
-import TodoItem from './../components/TodoItem'
 import TodoRemoveContainer from './../containers/TodoRemoveContainer'
 
 const styles = {
@@ -12,8 +11,8 @@ const styles = {
         textAlign: "center",
         float: "center"
     },
-    paper: {marginTop: 56, padding: 16}
-}
+    paper: {marginTop: 64, padding: 16}
+};
 
 const TodoApp = () => (
     <Row>
