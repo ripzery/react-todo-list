@@ -33,7 +33,6 @@ const TodoApp = () => (
 
 const TodoTitle = () => <h1 style={styles.textCenter}>อันนี้ต้องจด</h1>;
 
-
 /* Connect todo app to redux */
 
 export default TodoApp;
