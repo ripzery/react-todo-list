@@ -24,18 +24,11 @@ const todo = (state = 0, action) =>{
 const todos = (state = [], action) => {
     switch (action.type) {
         case 'ADD_TODO':
-            return [
-                ...state,
-                todo(undefined, action)
-            ];
+            return [...state, todo(undefined, action)];
         case 'TOGGLE_TODO':
-            return state.map(t =>
-                todo(t, action)
-            );
+            return state.map(t => todo(t, action));
         case 'REMOVE_TODO':
-            return state.filter(t =>
-                !t.checked
-            );
+            return state.filter(t => !t.checked);
         default:
             return state
     }

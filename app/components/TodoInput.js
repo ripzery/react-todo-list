@@ -31,7 +31,6 @@ class TodoInput extends React.Component {
 
     addItem() {
         let title = this.state.todoText;
-        console.log(title)
         this.setState({
             todoText: ""
         }, function () {
@@ -40,7 +39,7 @@ class TodoInput extends React.Component {
     }
 
     pressEnter(e) {
-        if (e.keyCode == 13) {
+        if (e.keyCode == 13 && this.state.todoText !== '') {
             this.addItem();
             return true
         }
