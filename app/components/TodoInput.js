@@ -15,8 +15,7 @@ class TodoInput extends React.Component {
     constructor() {
         super();
         this.state = {
-            todoText: "",
-            totalItems: 0
+            todoText: ""
         };
         this.update = this.update.bind(this);
         this.addItem = this.addItem.bind(this);
@@ -41,9 +40,7 @@ class TodoInput extends React.Component {
     pressEnter(e) {
         if (e.keyCode == 13 && this.state.todoText !== '') {
             this.addItem();
-            return true
         }
-        return false
     }
 
     render() {
@@ -52,7 +49,6 @@ class TodoInput extends React.Component {
                 <TextField hintText={this.props.hintText}
                            value={this.state.todoText}
                            onKeyDown={this.pressEnter}
-                           ref="text"
                            onChange={this.update}
                            maxLength={this.props.max}/>
                 <FlatButton label={"เพิ่มเลย"} primary={true} disabled={this.state.todoText.length==0}
