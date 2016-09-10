@@ -5,7 +5,8 @@ import {List} from 'material-ui/List';
 import TodoList from '../containers/TodoList'
 import TodoInput from './../components/TodoInput'
 import TodoRemoveContainer from './../containers/TodoRemoveContainer'
-
+import injectTapEventPlugin from 'react-tap-event-plugin';
+injectTapEventPlugin();
 const styles = {
     textCenter: {
         textAlign: "center",
