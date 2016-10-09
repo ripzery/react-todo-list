@@ -1,6 +1,8 @@
 import React from 'react';
 import FlatButton from 'material-ui/FlatButton';
 import TextField from 'material-ui/TextField';
+import {connect} from 'react-redux'
+import {addTodo} from '../actions/TodoAction'
 
 const styles = {
     textCenter: {
@@ -13,8 +15,7 @@ class TodoInput extends React.Component {
     constructor() {
         super();
         this.state = {
-            todoText: "",
-            totalItems: 0
+            todoText: ""
         };
         this.update = this.update.bind(this);
         this.addItem = this.addItem.bind(this);
@@ -28,21 +29,18 @@ class TodoInput extends React.Component {
     }
 
     addItem() {
-        this.props.update();
+        let title = this.state.todoText;
         this.setState({
             todoText: ""
         }, function () {
-
+            this.props.onAddTodo(title)
         });
-
     }
 
     pressEnter(e) {
-        if (e.keyCode == 13) {
+        if (e.keyCode == 13 && this.state.todoText !== '') {
             this.addItem();
-            return true
         }
-        return false
     }
 
     render() {
@@ -51,7 +49,6 @@ class TodoInput extends React.Component {
                 <TextField hintText={this.props.hintText}
                            value={this.state.todoText}
                            onKeyDown={this.pressEnter}
-                           ref="text"
                            onChange={this.update}
                            maxLength={this.props.max}/>
                 <FlatButton label={"เพิ่มเลย"} primary={true} disabled={this.state.todoText.length==0}
@@ -65,4 +62,12 @@ TodoInput.defaultProps = {
     hintText: "ค่อยๆกรอกนะ..."
 };
 
-export default TodoInput;
+const mapDispatchToProps = (dispatch) => {
+    return {
+        onAddTodo: (title) => {
+            dispatch(addTodo(title))
+        }
+    }
+};
+
+export default connect(null, mapDispatchToProps)(TodoInput);
