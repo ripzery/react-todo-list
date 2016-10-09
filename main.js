@@ -13,10 +13,9 @@ const store = createStore(reducer, window.devToolsExtension && window.devToolsEx
 ReactDOM.render(
     <Provider store={store}>
         <Router history={browserHistory}>
-            <Route path="/" component={Welcome} />
+            <Route path="/" component={Welcome}/>
             <Route path="todo" component={App}/>
-            <Route path="*" component={Page404} />
-         </Router>
-    </Provider>
-    , document.getElementById('app')
+            <Route path="*" component={Page404}/>
+        </Router>
+    </Provider>, document.getElementById('app')
 );
