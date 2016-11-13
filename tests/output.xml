@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generated="20161017 18:36:32.376" generator="Robot 3.0 (Python 2.7.10 on darwin)">
+<suite source="/Users/apple/PhpStormProjects/react-todo-list/tests/add_todo.robot" id="s1" name="Add Todo">
+<test id="s1-t1" name="Add And Remove Todo">
+<kw name="Open Website" library="resource_todo">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${SERVER}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20161017 18:36:32.485" level="INFO">Opening browser 'Chrome' to base url 'http://localhost:3000/'</msg>
+<status status="PASS" endtime="20161017 18:36:35.334" starttime="20161017 18:36:32.484"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20161017 18:36:35.612" starttime="20161017 18:36:35.335"></status>
+</kw>
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<doc>Sets the delay in seconds that is waited after each Selenium command.</doc>
+<arguments>
+<arg>${DELAY}</arg>
+</arguments>
+<status status="PASS" endtime="20161017 18:36:35.613" starttime="20161017 18:36:35.613"></status>
+</kw>
+<status status="PASS" endtime="20161017 18:36:35.614" starttime="20161017 18:36:32.484"></status>
+</kw>
+<kw name="Input Todo" library="resource_todo">
+<arguments>
+<arg>1</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>inputTodo</arg>
+<arg>${todo}</arg>
+</arguments>
+<msg timestamp="20161017 18:36:35.616" level="INFO">Typing text '1' into text field 'inputTodo'</msg>
+<status status="PASS" endtime="20161017 18:36:36.493" starttime="20161017 18:36:35.615"></status>
+</kw>
+<status status="PASS" endtime="20161017 18:36:36.493" starttime="20161017 18:36:35.614"></status>
+</kw>
+<kw name="Add Todo" library="resource_todo">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>addTodo</arg>
+</arguments>
+<msg timestamp="20161017 18:36:36.496" level="INFO">Clicking button 'addTodo'.</msg>
+<status status="PASS" endtime="20161017 18:36:37.662" starttime="20161017 18:36:36.495"></status>
+</kw>
+<status status="PASS" endtime="20161017 18:36:37.663" starttime="20161017 18:36:36.494"></status>
+</kw>
+<kw name="Input Todo" library="resource_todo">
+<arguments>
+<arg>2</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>inputTodo</arg>
+<arg>${todo}</arg>
+</arguments>
+<msg timestamp="20161017 18:36:37.666" level="INFO">Typing text '2' into text field 'inputTodo'</msg>
+<status status="PASS" endtime="20161017 18:36:38.501" starttime="20161017 18:36:37.665"></status>
+</kw>
+<status status="PASS" endtime="20161017 18:36:38.501" starttime="20161017 18:36:37.664"></status>
+</kw>
+<kw name="Add Todo" library="resource_todo">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>addTodo</arg>
+</arguments>
+<msg timestamp="20161017 18:36:38.503" level="INFO">Clicking button 'addTodo'.</msg>
+<status status="PASS" endtime="20161017 18:36:39.618" starttime="20161017 18:36:38.503"></status>
+</kw>
+<status status="PASS" endtime="20161017 18:36:39.619" starttime="20161017 18:36:38.502"></status>
+</kw>
+<kw name="Input Todo" library="resource_todo">
+<arguments>
+<arg>3</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>inputTodo</arg>
+<arg>${todo}</arg>
+</arguments>
+<msg timestamp="20161017 18:36:39.622" level="INFO">Typing text '3' into text field 'inputTodo'</msg>
+<status status="PASS" endtime="20161017 18:36:40.449" starttime="20161017 18:36:39.621"></status>
+</kw>
+<status status="PASS" endtime="20161017 18:36:40.449" starttime="20161017 18:36:39.620"></status>
+</kw>
+<kw name="Add Todo" library="resource_todo">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>addTodo</arg>
+</arguments>
+<msg timestamp="20161017 18:36:40.451" level="INFO">Clicking button 'addTodo'.</msg>
+<status status="PASS" endtime="20161017 18:36:41.561" starttime="20161017 18:36:40.450"></status>
+</kw>
+<status status="PASS" endtime="20161017 18:36:41.562" starttime="20161017 18:36:40.450"></status>
+</kw>
+<kw name="Input Todo" library="resource_todo">
+<arguments>
+<arg>4</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>inputTodo</arg>
+<arg>${todo}</arg>
+</arguments>
+<msg timestamp="20161017 18:36:41.564" level="INFO">Typing text '4' into text field 'inputTodo'</msg>
+<status status="PASS" endtime="20161017 18:36:42.390" starttime="20161017 18:36:41.563"></status>
+</kw>
+<status status="PASS" endtime="20161017 18:36:42.390" starttime="20161017 18:36:41.562"></status>
+</kw>
+<kw name="Add Todo" library="resource_todo">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>addTodo</arg>
+</arguments>
+<msg timestamp="20161017 18:36:42.392" level="INFO">Clicking button 'addTodo'.</msg>
+<status status="PASS" endtime="20161017 18:36:43.498" starttime="20161017 18:36:42.391"></status>
+</kw>
+<status status="PASS" endtime="20161017 18:36:43.498" starttime="20161017 18:36:42.391"></status>
+</kw>
+<kw name="Click Item" library="resource_todo">
+<arguments>
+<arg>0</arg>
+</arguments>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>todoItem${id}</arg>
+</arguments>
+<msg timestamp="20161017 18:36:43.501" level="INFO">Clicking element 'todoItem0'.</msg>
+<status status="PASS" endtime="20161017 18:36:44.098" starttime="20161017 18:36:43.500"></status>
+</kw>
+<status status="PASS" endtime="20161017 18:36:44.099" starttime="20161017 18:36:43.499"></status>
+</kw>
+<kw name="Click Item" library="resource_todo">
+<arguments>
+<arg>1</arg>
+</arguments>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>todoItem${id}</arg>
+</arguments>
+<msg timestamp="20161017 18:36:44.102" level="INFO">Clicking element 'todoItem1'.</msg>
+<status status="PASS" endtime="20161017 18:36:44.699" starttime="20161017 18:36:44.101"></status>
+</kw>
+<status status="PASS" endtime="20161017 18:36:44.700" starttime="20161017 18:36:44.100"></status>
+</kw>
+<kw name="Click Item" library="resource_todo">
+<arguments>
+<arg>2</arg>
+</arguments>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>todoItem${id}</arg>
+</arguments>
+<msg timestamp="20161017 18:36:44.702" level="INFO">Clicking element 'todoItem2'.</msg>
+<status status="PASS" endtime="20161017 18:36:45.301" starttime="20161017 18:36:44.702"></status>
+</kw>
+<status status="PASS" endtime="20161017 18:36:45.301" starttime="20161017 18:36:44.701"></status>
+</kw>
+<kw name="Remove Todo" library="resource_todo">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>removeTodo</arg>
+</arguments>
+<msg timestamp="20161017 18:36:45.304" level="INFO">Clicking button 'removeTodo'.</msg>
+<status status="PASS" endtime="20161017 18:36:46.422" starttime="20161017 18:36:45.303"></status>
+</kw>
+<status status="PASS" endtime="20161017 18:36:46.422" starttime="20161017 18:36:45.302"></status>
+</kw>
+<kw name="Click Item" library="resource_todo">
+<arguments>
+<arg>3</arg>
+</arguments>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>todoItem${id}</arg>
+</arguments>
+<msg timestamp="20161017 18:36:46.424" level="INFO">Clicking element 'todoItem3'.</msg>
+<status status="PASS" endtime="20161017 18:36:47.004" starttime="20161017 18:36:46.423"></status>
+</kw>
+<status status="PASS" endtime="20161017 18:36:47.005" starttime="20161017 18:36:46.423"></status>
+</kw>
+<kw name="Remove Todo" library="resource_todo">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>removeTodo</arg>
+</arguments>
+<msg timestamp="20161017 18:36:47.008" level="INFO">Clicking button 'removeTodo'.</msg>
+<status status="PASS" endtime="20161017 18:36:48.096" starttime="20161017 18:36:47.007"></status>
+</kw>
+<status status="PASS" endtime="20161017 18:36:48.097" starttime="20161017 18:36:47.006"></status>
+</kw>
+<kw type="teardown" name="Close Browser Web" library="resource_todo">
+<kw name="Close Browser" library="Selenium2Library">
+<doc>Closes the current browser.</doc>
+<status status="PASS" endtime="20161017 18:36:48.420" starttime="20161017 18:36:48.098"></status>
+</kw>
+<status status="PASS" endtime="20161017 18:36:48.420" starttime="20161017 18:36:48.097"></status>
+</kw>
+<status status="PASS" endtime="20161017 18:36:48.421" critical="yes" starttime="20161017 18:36:32.483"></status>
+</test>
+<status status="PASS" endtime="20161017 18:36:48.423" starttime="20161017 18:36:32.380"></status>
+</suite>
+<statistics>
+<total>
+<stat fail="0" pass="1">Critical Tests</stat>
+<stat fail="0" pass="1">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat fail="0" id="s1" name="Add Todo" pass="1">Add Todo</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

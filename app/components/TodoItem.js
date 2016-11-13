@@ -12,9 +12,10 @@ const styles = {
     }
 };
 
-const TodoItem = ({ onClick, checked, title }) => (
+const TodoItem = ({id, onClick, checked, title }) => (
     <ListItem style={ checked ? styles.textChecked : styles.textUnchecked}
               primaryText={ title }
+              id={"todoItem"+id}
               leftCheckbox={<Checkbox checked={checked} onCheck={onClick}/>}/>
 );
 

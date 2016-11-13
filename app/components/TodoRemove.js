@@ -16,7 +16,7 @@ const shouldEnabledRemove = (todos) => {
 const TodoRemove = ({checkedTodos, removeTodos}) => {
     return (
         <div style={styles.remove}>
-            <FlatButton disabled={shouldEnabledRemove(checkedTodos)} label="Remove" onClick={removeTodos()} secondary={true}/>
+            <FlatButton id="removeTodo" disabled={shouldEnabledRemove(checkedTodos)} label="Remove" onClick={removeTodos()} secondary={true}/>
         </div>
     );
 };

@@ -47,11 +47,13 @@ class TodoInput extends React.Component {
         return (
             <div style={styles.textCenter}>
                 <TextField hintText={this.props.hintText}
+                           id="inputTodo"
                            value={this.state.todoText}
                            onKeyDown={this.pressEnter}
                            onChange={this.update}
                            maxLength={this.props.max}/>
                 <FlatButton label={"เพิ่มเลย"} primary={true} disabled={this.state.todoText.length==0}
+                            id="addTodo"
                             onClick={this.addItem}/>
             </div>
         );
