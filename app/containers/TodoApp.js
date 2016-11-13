@@ -22,7 +22,7 @@ const TodoApp = () => (
             <Paper style={styles.paper} zDepth={2}>
                 <div>
                     <TodoTitle />
-                    <TodoInput max={20}/>
+                    <TodoInput max={30}/>
                     <TodoList />
                     <TodoRemoveContainer />
                 </div>
