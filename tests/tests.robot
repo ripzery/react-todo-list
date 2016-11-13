@@ -5,7 +5,8 @@ Test Teardown   Close Browser
 
 *** Test Cases ***
 [1] Todo List Should Be Empty
-    Should Be Equal As Numbers  Get Total Todo   0
+    ${total}=     Get Total Todo
+    Should Be Equal As Numbers   ${total}   0
 
 [2] Remove Button Should Be Enable
     Typing  Visit blog.ripzery.me
