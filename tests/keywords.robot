@@ -19,26 +19,30 @@ Open Website
     Set Selenium Speed    ${DELAY}
 
 Typing
-    [Arguments]     ${todo}
-    Input Text      inputTodo   ${todo}
+    [Arguments]     ${word}
+    Input Text      inputTodo    ${word}
 
 Click Add
     Click Button    addTodo
 
 Click Todo By Id
-    [Arguments]      ${id}
-    Click Element    todoItem${id}
+    [Arguments]      ${todoId}
+    Click Element    todoItem${todoId}
 
-Is Todo Exist
-    [Arguments]     ${id}
-    Element Should Be Visible      todoItem${id}
+Click Remove
+    Click Button    removeTodo
+
+Get Todo By Id
+    [Arguments]     ${todoId}
+    [Return]        Element Text Should Be
 
 Get Total Todo
     ${total}=    Get Matching Xpath Count   //div[label]
-    Log     ${total}
+    [Return]     ${total}
 
-Remove Todo
-    Click Button    removeTodo
+Is Todo Exist
+    [Arguments]     ${todoId}
+    Element Should Be Visible      todoItem${todoId}
 
-Close Browser Web
+Close Browser
     Close Browser

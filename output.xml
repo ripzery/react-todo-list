@@ -1,71 +1,1372 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generated="20161113 22:27:58.258" generator="Robot 3.0 (Python 2.7.10 on darwin)">
+<robot generated="20161113 23:25:38.338" generator="Robot 3.0 (Python 2.7.10 on darwin)">
 <suite source="/Users/apple/PhpStormProjects/react-todo-list/tests/tests.robot" id="s1" name="Tests">
-<test id="s1-t1" name="Test">
-<kw name="Open Website" library="keywords">
+<test id="s1-t1" name="[1] Todo List Should Be Empty">
+<kw type="setup" name="Open Website" library="keywords">
 <kw name="Open Browser" library="Selenium2Library">
 <doc>Opens a new browser instance to given URL.</doc>
 <arguments>
 <arg>${SERVER}</arg>
 <arg>${BROWSER}</arg>
 </arguments>
-<msg timestamp="20161113 22:27:58.374" level="INFO">Opening browser 'Chrome' to base url 'https://ripzery.me/todo'</msg>
-<status status="PASS" endtime="20161113 22:28:01.591" starttime="20161113 22:27:58.374"></status>
+<msg timestamp="20161113 23:25:38.457" level="INFO">Opening browser 'Chrome' to base url 'https://ripzery.me/todo'</msg>
+<status status="PASS" endtime="20161113 23:25:41.991" starttime="20161113 23:25:38.456"></status>
 </kw>
 <kw name="Maximize Browser Window" library="Selenium2Library">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" endtime="20161113 22:28:01.893" starttime="20161113 22:28:01.591"></status>
+<status status="PASS" endtime="20161113 23:25:42.264" starttime="20161113 23:25:41.992"></status>
 </kw>
 <kw name="Set Selenium Speed" library="Selenium2Library">
 <doc>Sets the delay in seconds that is waited after each Selenium command.</doc>
 <arguments>
 <arg>${DELAY}</arg>
 </arguments>
-<status status="PASS" endtime="20161113 22:28:01.894" starttime="20161113 22:28:01.893"></status>
+<status status="PASS" endtime="20161113 23:25:42.266" starttime="20161113 23:25:42.265"></status>
 </kw>
-<status status="PASS" endtime="20161113 22:28:01.894" starttime="20161113 22:27:58.373"></status>
+<status status="PASS" endtime="20161113 23:25:42.266" starttime="20161113 23:25:38.456"></status>
+</kw>
+<kw name="Should Be Equal As Numbers" library="BuiltIn">
+<doc>Fails if objects are unequal after converting them to real numbers.</doc>
+<arguments>
+<arg>Get Total Todo</arg>
+<arg>0</arg>
+</arguments>
+<msg timestamp="20161113 23:25:42.268" level="FAIL">'Get Total Todo' cannot be converted to a floating point number: ValueError: could not convert string to float: Get Total Todo</msg>
+<status status="FAIL" endtime="20161113 23:25:42.268" starttime="20161113 23:25:42.267"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<msg timestamp="20161113 23:25:42.291" level="FAIL">Maximum limit of started keywords exceeded.</msg>
+<status status="FAIL" endtime="20161113 23:25:42.291" starttime="20161113 23:25:42.290"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:42.291" starttime="20161113 23:25:42.290"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:42.291" starttime="20161113 23:25:42.289"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:42.291" starttime="20161113 23:25:42.289"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:42.292" starttime="20161113 23:25:42.289"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:42.292" starttime="20161113 23:25:42.288"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:42.292" starttime="20161113 23:25:42.288"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:42.292" starttime="20161113 23:25:42.287"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:42.292" starttime="20161113 23:25:42.287"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:42.293" starttime="20161113 23:25:42.287"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:42.293" starttime="20161113 23:25:42.286"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:42.293" starttime="20161113 23:25:42.286"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:42.293" starttime="20161113 23:25:42.285"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:42.294" starttime="20161113 23:25:42.285"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:42.296" starttime="20161113 23:25:42.284"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:42.296" starttime="20161113 23:25:42.284"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:42.296" starttime="20161113 23:25:42.284"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:42.296" starttime="20161113 23:25:42.283"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:42.296" starttime="20161113 23:25:42.283"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:42.297" starttime="20161113 23:25:42.283"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:42.297" starttime="20161113 23:25:42.282"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:42.297" starttime="20161113 23:25:42.282"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:42.297" starttime="20161113 23:25:42.281"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:42.298" starttime="20161113 23:25:42.281"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:42.298" starttime="20161113 23:25:42.281"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:42.298" starttime="20161113 23:25:42.280"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:42.299" starttime="20161113 23:25:42.280"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:42.299" starttime="20161113 23:25:42.279"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:42.299" starttime="20161113 23:25:42.278"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:42.299" starttime="20161113 23:25:42.278"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:42.300" starttime="20161113 23:25:42.277"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:42.300" starttime="20161113 23:25:42.277"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:42.300" starttime="20161113 23:25:42.276"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:42.300" starttime="20161113 23:25:42.276"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:42.300" starttime="20161113 23:25:42.275"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:42.300" starttime="20161113 23:25:42.274"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:42.301" starttime="20161113 23:25:42.274"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:42.301" starttime="20161113 23:25:42.273"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:42.301" starttime="20161113 23:25:42.272"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:42.301" starttime="20161113 23:25:42.271"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:42.301" starttime="20161113 23:25:42.270"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:42.302" starttime="20161113 23:25:42.269">Maximum limit of started keywords exceeded.</status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:42.302" critical="yes" starttime="20161113 23:25:38.455">'Get Total Todo' cannot be converted to a floating point number: ValueError: could not convert string to float: Get Total Todo
+
+Also teardown failed:
+Maximum limit of started keywords exceeded.</status>
+</test>
+<test id="s1-t2" name="[2] Remove Button Should Be Enable">
+<kw type="setup" name="Open Website" library="keywords">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${SERVER}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20161113 23:25:42.307" level="INFO">Opening browser 'Chrome' to base url 'https://ripzery.me/todo'</msg>
+<status status="PASS" endtime="20161113 23:25:46.063" starttime="20161113 23:25:42.306"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20161113 23:25:46.590" starttime="20161113 23:25:46.064"></status>
+</kw>
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<doc>Sets the delay in seconds that is waited after each Selenium command.</doc>
+<arguments>
+<arg>${DELAY}</arg>
+</arguments>
+<status status="PASS" endtime="20161113 23:25:46.593" starttime="20161113 23:25:46.591"></status>
+</kw>
+<status status="PASS" endtime="20161113 23:25:46.594" starttime="20161113 23:25:42.304"></status>
 </kw>
 <kw name="Typing" library="keywords">
 <arguments>
-<arg>Euro</arg>
+<arg>Visit blog.ripzery.me</arg>
 </arguments>
 <kw name="Input Text" library="Selenium2Library">
 <doc>Types the given `text` into text field identified by `locator`.</doc>
 <arguments>
 <arg>inputTodo</arg>
-<arg>${todo}</arg>
+<arg>${word}</arg>
 </arguments>
-<msg timestamp="20161113 22:28:01.896" level="INFO">Typing text 'Euro' into text field 'inputTodo'</msg>
-<kw name="Capture Page Screenshot" library="Selenium2Library">
-<doc>Takes a screenshot of the current page and embeds it into the log.</doc>
-<msg timestamp="20161113 22:28:02.581" html="yes" level="INFO">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
-<status status="PASS" endtime="20161113 22:28:02.582" starttime="20161113 22:28:02.169"></status>
+<msg timestamp="20161113 23:25:46.597" level="INFO">Typing text 'Visit blog.ripzery.me' into text field 'inputTodo'</msg>
+<status status="PASS" endtime="20161113 23:25:47.630" starttime="20161113 23:25:46.596"></status>
 </kw>
-<msg timestamp="20161113 22:28:02.583" level="FAIL">ValueError: Element locator 'inputTodo' did not match any elements.</msg>
-<status status="FAIL" endtime="20161113 22:28:02.584" starttime="20161113 22:28:01.895"></status>
+<status status="PASS" endtime="20161113 23:25:47.631" starttime="20161113 23:25:46.595"></status>
 </kw>
-<status status="FAIL" endtime="20161113 22:28:02.584" starttime="20161113 22:28:01.895"></status>
+<kw name="Click Add" library="keywords">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>addTodo</arg>
+</arguments>
+<msg timestamp="20161113 23:25:47.634" level="INFO">Clicking button 'addTodo'.</msg>
+<status status="PASS" endtime="20161113 23:25:48.778" starttime="20161113 23:25:47.633"></status>
 </kw>
-<kw type="teardown" name="Close Browser Web" library="keywords">
-<kw name="Close Browser" library="Selenium2Library">
-<doc>Closes the current browser.</doc>
-<status status="PASS" endtime="20161113 22:28:02.907" starttime="20161113 22:28:02.585"></status>
+<status status="PASS" endtime="20161113 23:25:48.779" starttime="20161113 23:25:47.632"></status>
 </kw>
-<status status="PASS" endtime="20161113 22:28:02.907" starttime="20161113 22:28:02.585"></status>
+<kw name="Click Todo By Id" library="keywords">
+<arguments>
+<arg>0</arg>
+</arguments>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>todoItem${todoId}</arg>
+</arguments>
+<msg timestamp="20161113 23:25:48.782" level="INFO">Clicking element 'todoItem0'.</msg>
+<status status="PASS" endtime="20161113 23:25:49.356" starttime="20161113 23:25:48.781"></status>
 </kw>
-<status status="FAIL" endtime="20161113 22:28:02.908" critical="yes" starttime="20161113 22:27:58.372">ValueError: Element locator 'inputTodo' did not match any elements.</status>
+<status status="PASS" endtime="20161113 23:25:49.356" starttime="20161113 23:25:48.779"></status>
+</kw>
+<kw name="Element Should Be Enabled" library="Selenium2Library">
+<doc>Verifies that element identified with `locator` is enabled.</doc>
+<arguments>
+<arg>removeTodo</arg>
+</arguments>
+<status status="PASS" endtime="20161113 23:25:50.429" starttime="20161113 23:25:49.356"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<msg timestamp="20161113 23:25:50.449" level="FAIL">Maximum limit of started keywords exceeded.</msg>
+<status status="FAIL" endtime="20161113 23:25:50.449" starttime="20161113 23:25:50.449"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:50.450" starttime="20161113 23:25:50.448"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:50.450" starttime="20161113 23:25:50.448"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:50.450" starttime="20161113 23:25:50.448"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:50.450" starttime="20161113 23:25:50.447"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:50.450" starttime="20161113 23:25:50.447"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:50.450" starttime="20161113 23:25:50.446"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:50.451" starttime="20161113 23:25:50.446"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:50.451" starttime="20161113 23:25:50.446"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:50.451" starttime="20161113 23:25:50.445"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:50.451" starttime="20161113 23:25:50.445"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:50.451" starttime="20161113 23:25:50.445"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:50.452" starttime="20161113 23:25:50.444"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:50.452" starttime="20161113 23:25:50.444"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:50.452" starttime="20161113 23:25:50.443"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:50.452" starttime="20161113 23:25:50.443"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:50.452" starttime="20161113 23:25:50.442"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:50.452" starttime="20161113 23:25:50.442"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:50.453" starttime="20161113 23:25:50.441"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:50.453" starttime="20161113 23:25:50.441"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:50.453" starttime="20161113 23:25:50.440"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:50.453" starttime="20161113 23:25:50.440"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:50.453" starttime="20161113 23:25:50.440"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:50.454" starttime="20161113 23:25:50.439"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:50.454" starttime="20161113 23:25:50.439"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:50.454" starttime="20161113 23:25:50.438"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:50.454" starttime="20161113 23:25:50.438"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:50.454" starttime="20161113 23:25:50.437"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:50.455" starttime="20161113 23:25:50.437"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:50.455" starttime="20161113 23:25:50.436"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:50.455" starttime="20161113 23:25:50.436"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:50.456" starttime="20161113 23:25:50.435"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:50.457" starttime="20161113 23:25:50.435"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:50.457" starttime="20161113 23:25:50.434"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:50.457" starttime="20161113 23:25:50.433"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:50.458" starttime="20161113 23:25:50.432"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:50.458" starttime="20161113 23:25:50.432"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:50.458" starttime="20161113 23:25:50.431"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:50.459" starttime="20161113 23:25:50.431"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:50.459" starttime="20161113 23:25:50.430"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:50.460" starttime="20161113 23:25:50.429">Maximum limit of started keywords exceeded.</status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:50.460" critical="yes" starttime="20161113 23:25:42.303">Teardown failed:
+Maximum limit of started keywords exceeded.</status>
 </test>
-<status status="FAIL" endtime="20161113 22:28:02.911" starttime="20161113 22:27:58.262"></status>
+<test id="s1-t3" name="[3] Remove Button Should Be Disable">
+<kw type="setup" name="Open Website" library="keywords">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${SERVER}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20161113 23:25:50.465" level="INFO">Opening browser 'Chrome' to base url 'https://ripzery.me/todo'</msg>
+<status status="PASS" endtime="20161113 23:25:54.419" starttime="20161113 23:25:50.464"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20161113 23:25:54.936" starttime="20161113 23:25:54.419"></status>
+</kw>
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<doc>Sets the delay in seconds that is waited after each Selenium command.</doc>
+<arguments>
+<arg>${DELAY}</arg>
+</arguments>
+<status status="PASS" endtime="20161113 23:25:54.937" starttime="20161113 23:25:54.936"></status>
+</kw>
+<status status="PASS" endtime="20161113 23:25:54.938" starttime="20161113 23:25:50.463"></status>
+</kw>
+<kw name="Element Should Be Disabled" library="Selenium2Library">
+<doc>Verifies that element identified with `locator` is disabled.</doc>
+<arguments>
+<arg>removeTodo</arg>
+</arguments>
+<status status="PASS" endtime="20161113 23:25:55.740" starttime="20161113 23:25:54.938"></status>
+</kw>
+<kw name="Typing" library="keywords">
+<arguments>
+<arg>Visit blog.ripzery.me</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>inputTodo</arg>
+<arg>${word}</arg>
+</arguments>
+<msg timestamp="20161113 23:25:55.742" level="INFO">Typing text 'Visit blog.ripzery.me' into text field 'inputTodo'</msg>
+<status status="PASS" endtime="20161113 23:25:56.715" starttime="20161113 23:25:55.741"></status>
+</kw>
+<status status="PASS" endtime="20161113 23:25:56.715" starttime="20161113 23:25:55.740"></status>
+</kw>
+<kw name="Click Add" library="keywords">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>addTodo</arg>
+</arguments>
+<msg timestamp="20161113 23:25:56.717" level="INFO">Clicking button 'addTodo'.</msg>
+<status status="PASS" endtime="20161113 23:25:57.856" starttime="20161113 23:25:56.716"></status>
+</kw>
+<status status="PASS" endtime="20161113 23:25:57.857" starttime="20161113 23:25:56.716"></status>
+</kw>
+<kw name="Element Should Be Disabled" library="Selenium2Library">
+<doc>Verifies that element identified with `locator` is disabled.</doc>
+<arguments>
+<arg>removeTodo</arg>
+</arguments>
+<status status="PASS" endtime="20161113 23:25:58.640" starttime="20161113 23:25:57.857"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<msg timestamp="20161113 23:25:58.659" level="FAIL">Maximum limit of started keywords exceeded.</msg>
+<status status="FAIL" endtime="20161113 23:25:58.659" starttime="20161113 23:25:58.658"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:58.659" starttime="20161113 23:25:58.658"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:58.659" starttime="20161113 23:25:58.658"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:58.659" starttime="20161113 23:25:58.657"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:58.659" starttime="20161113 23:25:58.657"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:58.660" starttime="20161113 23:25:58.657"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:58.660" starttime="20161113 23:25:58.656"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:58.660" starttime="20161113 23:25:58.656"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:58.660" starttime="20161113 23:25:58.656"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:58.660" starttime="20161113 23:25:58.655"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:58.661" starttime="20161113 23:25:58.655"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:58.661" starttime="20161113 23:25:58.655"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:58.661" starttime="20161113 23:25:58.655"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:58.661" starttime="20161113 23:25:58.654"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:58.661" starttime="20161113 23:25:58.654"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:58.661" starttime="20161113 23:25:58.653"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:58.662" starttime="20161113 23:25:58.653"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:58.662" starttime="20161113 23:25:58.653"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:58.662" starttime="20161113 23:25:58.652"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:58.664" starttime="20161113 23:25:58.652"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:58.664" starttime="20161113 23:25:58.652"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:58.664" starttime="20161113 23:25:58.651"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:58.665" starttime="20161113 23:25:58.651"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:58.665" starttime="20161113 23:25:58.650"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:58.665" starttime="20161113 23:25:58.650"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:58.665" starttime="20161113 23:25:58.649"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:58.666" starttime="20161113 23:25:58.649"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:58.666" starttime="20161113 23:25:58.648"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:58.666" starttime="20161113 23:25:58.648"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:58.666" starttime="20161113 23:25:58.647"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:58.666" starttime="20161113 23:25:58.646"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:58.667" starttime="20161113 23:25:58.646"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:58.667" starttime="20161113 23:25:58.645"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:58.667" starttime="20161113 23:25:58.645"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:58.667" starttime="20161113 23:25:58.644"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:58.667" starttime="20161113 23:25:58.643"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:58.668" starttime="20161113 23:25:58.643"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:58.668" starttime="20161113 23:25:58.642"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:58.668" starttime="20161113 23:25:58.641"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:58.668" starttime="20161113 23:25:58.641">Maximum limit of started keywords exceeded.</status>
+</kw>
+<status status="FAIL" endtime="20161113 23:25:58.668" critical="yes" starttime="20161113 23:25:50.461">Teardown failed:
+Maximum limit of started keywords exceeded.</status>
+</test>
+<test id="s1-t4" name="[4] Add Button Should Be Enable">
+<kw type="setup" name="Open Website" library="keywords">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${SERVER}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20161113 23:25:58.671" level="INFO">Opening browser 'Chrome' to base url 'https://ripzery.me/todo'</msg>
+<status status="PASS" endtime="20161113 23:26:02.638" starttime="20161113 23:25:58.671"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20161113 23:26:03.193" starttime="20161113 23:26:02.639"></status>
+</kw>
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<doc>Sets the delay in seconds that is waited after each Selenium command.</doc>
+<arguments>
+<arg>${DELAY}</arg>
+</arguments>
+<status status="PASS" endtime="20161113 23:26:03.194" starttime="20161113 23:26:03.193"></status>
+</kw>
+<status status="PASS" endtime="20161113 23:26:03.194" starttime="20161113 23:25:58.670"></status>
+</kw>
+<kw name="Typing" library="keywords">
+<arguments>
+<arg>Visit blog.ripzery.me</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>inputTodo</arg>
+<arg>${word}</arg>
+</arguments>
+<msg timestamp="20161113 23:26:03.196" level="INFO">Typing text 'Visit blog.ripzery.me' into text field 'inputTodo'</msg>
+<status status="PASS" endtime="20161113 23:26:04.211" starttime="20161113 23:26:03.195"></status>
+</kw>
+<status status="PASS" endtime="20161113 23:26:04.212" starttime="20161113 23:26:03.195"></status>
+</kw>
+<kw name="Element Should Be Enabled" library="Selenium2Library">
+<doc>Verifies that element identified with `locator` is enabled.</doc>
+<arguments>
+<arg>addTodo</arg>
+</arguments>
+<status status="PASS" endtime="20161113 23:26:05.287" starttime="20161113 23:26:04.213"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<msg timestamp="20161113 23:26:05.310" level="FAIL">Maximum limit of started keywords exceeded.</msg>
+<status status="FAIL" endtime="20161113 23:26:05.310" starttime="20161113 23:26:05.309"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:05.310" starttime="20161113 23:26:05.308"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:05.310" starttime="20161113 23:26:05.308"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:05.311" starttime="20161113 23:26:05.308"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:05.311" starttime="20161113 23:26:05.307"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:05.312" starttime="20161113 23:26:05.307"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:05.312" starttime="20161113 23:26:05.307"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:05.312" starttime="20161113 23:26:05.307"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:05.313" starttime="20161113 23:26:05.306"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:05.313" starttime="20161113 23:26:05.306"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:05.314" starttime="20161113 23:26:05.306"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:05.314" starttime="20161113 23:26:05.305"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:05.314" starttime="20161113 23:26:05.305"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:05.315" starttime="20161113 23:26:05.304"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:05.315" starttime="20161113 23:26:05.304"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:05.315" starttime="20161113 23:26:05.304"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:05.316" starttime="20161113 23:26:05.303"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:05.316" starttime="20161113 23:26:05.303"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:05.316" starttime="20161113 23:26:05.302"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:05.318" starttime="20161113 23:26:05.301"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:05.318" starttime="20161113 23:26:05.300"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:05.319" starttime="20161113 23:26:05.300"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:05.319" starttime="20161113 23:26:05.300"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:05.320" starttime="20161113 23:26:05.299"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:05.320" starttime="20161113 23:26:05.299"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:05.320" starttime="20161113 23:26:05.299"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:05.321" starttime="20161113 23:26:05.298"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:05.321" starttime="20161113 23:26:05.296"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:05.321" starttime="20161113 23:26:05.294"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:05.322" starttime="20161113 23:26:05.293"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:05.322" starttime="20161113 23:26:05.292"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:05.322" starttime="20161113 23:26:05.292"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:05.323" starttime="20161113 23:26:05.291"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:05.323" starttime="20161113 23:26:05.291"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:05.323" starttime="20161113 23:26:05.290"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:05.324" starttime="20161113 23:26:05.289"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:05.324" starttime="20161113 23:26:05.289"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:05.324" starttime="20161113 23:26:05.288"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:05.324" starttime="20161113 23:26:05.287">Maximum limit of started keywords exceeded.</status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:05.325" critical="yes" starttime="20161113 23:25:58.669">Teardown failed:
+Maximum limit of started keywords exceeded.</status>
+</test>
+<test id="s1-t5" name="[5] Add Button Should Be Disable">
+<kw type="setup" name="Open Website" library="keywords">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${SERVER}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20161113 23:26:05.328" level="INFO">Opening browser 'Chrome' to base url 'https://ripzery.me/todo'</msg>
+<status status="PASS" endtime="20161113 23:26:09.209" starttime="20161113 23:26:05.327"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20161113 23:26:09.735" starttime="20161113 23:26:09.210"></status>
+</kw>
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<doc>Sets the delay in seconds that is waited after each Selenium command.</doc>
+<arguments>
+<arg>${DELAY}</arg>
+</arguments>
+<status status="PASS" endtime="20161113 23:26:09.736" starttime="20161113 23:26:09.736"></status>
+</kw>
+<status status="PASS" endtime="20161113 23:26:09.737" starttime="20161113 23:26:05.327"></status>
+</kw>
+<kw name="Element Should Be Disabled" library="Selenium2Library">
+<doc>Verifies that element identified with `locator` is disabled.</doc>
+<arguments>
+<arg>addTodo</arg>
+</arguments>
+<status status="PASS" endtime="20161113 23:26:10.554" starttime="20161113 23:26:09.737"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<msg timestamp="20161113 23:26:10.570" level="FAIL">Maximum limit of started keywords exceeded.</msg>
+<status status="FAIL" endtime="20161113 23:26:10.570" starttime="20161113 23:26:10.569"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:10.571" starttime="20161113 23:26:10.569"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:10.571" starttime="20161113 23:26:10.568"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:10.571" starttime="20161113 23:26:10.568"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:10.571" starttime="20161113 23:26:10.567"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:10.572" starttime="20161113 23:26:10.567"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:10.572" starttime="20161113 23:26:10.566"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:10.572" starttime="20161113 23:26:10.566"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:10.572" starttime="20161113 23:26:10.566"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:10.572" starttime="20161113 23:26:10.565"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:10.573" starttime="20161113 23:26:10.565"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:10.573" starttime="20161113 23:26:10.564"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:10.573" starttime="20161113 23:26:10.564"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:10.573" starttime="20161113 23:26:10.564"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:10.573" starttime="20161113 23:26:10.563"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:10.573" starttime="20161113 23:26:10.563"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:10.574" starttime="20161113 23:26:10.563"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:10.574" starttime="20161113 23:26:10.562"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:10.574" starttime="20161113 23:26:10.562"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:10.574" starttime="20161113 23:26:10.562"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:10.574" starttime="20161113 23:26:10.562"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:10.574" starttime="20161113 23:26:10.561"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:10.575" starttime="20161113 23:26:10.561"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:10.575" starttime="20161113 23:26:10.561"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:10.576" starttime="20161113 23:26:10.561"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:10.576" starttime="20161113 23:26:10.560"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:10.577" starttime="20161113 23:26:10.560"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:10.577" starttime="20161113 23:26:10.559"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:10.577" starttime="20161113 23:26:10.559"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:10.578" starttime="20161113 23:26:10.559"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:10.578" starttime="20161113 23:26:10.558"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:10.578" starttime="20161113 23:26:10.558"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:10.579" starttime="20161113 23:26:10.557"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:10.579" starttime="20161113 23:26:10.557"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:10.579" starttime="20161113 23:26:10.557"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:10.580" starttime="20161113 23:26:10.556"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:10.580" starttime="20161113 23:26:10.555"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:10.580" starttime="20161113 23:26:10.555">Maximum limit of started keywords exceeded.</status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:10.580" critical="yes" starttime="20161113 23:26:05.326">Teardown failed:
+Maximum limit of started keywords exceeded.</status>
+</test>
+<test id="s1-t6" name="[6] Todo Item Should Increment When Added">
+<kw type="setup" name="Open Website" library="keywords">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${SERVER}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20161113 23:26:10.582" level="INFO">Opening browser 'Chrome' to base url 'https://ripzery.me/todo'</msg>
+<status status="PASS" endtime="20161113 23:26:14.560" starttime="20161113 23:26:10.582"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20161113 23:26:15.003" starttime="20161113 23:26:14.561"></status>
+</kw>
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<doc>Sets the delay in seconds that is waited after each Selenium command.</doc>
+<arguments>
+<arg>${DELAY}</arg>
+</arguments>
+<status status="PASS" endtime="20161113 23:26:15.004" starttime="20161113 23:26:15.003"></status>
+</kw>
+<status status="PASS" endtime="20161113 23:26:15.004" starttime="20161113 23:26:10.582"></status>
+</kw>
+<kw>
+<assign>
+<var>${expected}=</var>
+<var>${1}</var>
+</assign>
+<msg timestamp="20161113 23:26:15.004" level="FAIL">Keyword name cannot be empty.</msg>
+<status status="FAIL" endtime="20161113 23:26:15.004" starttime="20161113 23:26:15.004"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<msg timestamp="20161113 23:26:15.035" level="FAIL">Maximum limit of started keywords exceeded.</msg>
+<status status="FAIL" endtime="20161113 23:26:15.035" starttime="20161113 23:26:15.034"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:15.035" starttime="20161113 23:26:15.034"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:15.035" starttime="20161113 23:26:15.033"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:15.035" starttime="20161113 23:26:15.033"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:15.036" starttime="20161113 23:26:15.032"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:15.036" starttime="20161113 23:26:15.031"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:15.036" starttime="20161113 23:26:15.031"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:15.036" starttime="20161113 23:26:15.030"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:15.037" starttime="20161113 23:26:15.029"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:15.037" starttime="20161113 23:26:15.029"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:15.038" starttime="20161113 23:26:15.028"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:15.039" starttime="20161113 23:26:15.026"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:15.039" starttime="20161113 23:26:15.025"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:15.039" starttime="20161113 23:26:15.024"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:15.039" starttime="20161113 23:26:15.023"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:15.040" starttime="20161113 23:26:15.022"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:15.040" starttime="20161113 23:26:15.021"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:15.041" starttime="20161113 23:26:15.020"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:15.041" starttime="20161113 23:26:15.016"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:15.041" starttime="20161113 23:26:15.012"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:15.041" starttime="20161113 23:26:15.012"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:15.042" starttime="20161113 23:26:15.012"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:15.042" starttime="20161113 23:26:15.011"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:15.042" starttime="20161113 23:26:15.011"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:15.042" starttime="20161113 23:26:15.011"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:15.042" starttime="20161113 23:26:15.010"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:15.043" starttime="20161113 23:26:15.009"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:15.043" starttime="20161113 23:26:15.008"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:15.043" starttime="20161113 23:26:15.008"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:15.043" starttime="20161113 23:26:15.007"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:15.043" starttime="20161113 23:26:15.007"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:15.044" starttime="20161113 23:26:15.007"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:15.044" starttime="20161113 23:26:15.006"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:15.044" starttime="20161113 23:26:15.006"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:15.044" starttime="20161113 23:26:15.006"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:15.046" starttime="20161113 23:26:15.005"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:15.046" starttime="20161113 23:26:15.005">Maximum limit of started keywords exceeded.</status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:15.046" critical="yes" starttime="20161113 23:26:10.581">Keyword name cannot be empty.
+
+Also teardown failed:
+Maximum limit of started keywords exceeded.</status>
+</test>
+<test id="s1-t7" name="[7] Last Todo Item Should Be Match Added Word">
+<kw type="setup" name="Open Website" library="keywords">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${SERVER}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20161113 23:26:15.050" level="INFO">Opening browser 'Chrome' to base url 'https://ripzery.me/todo'</msg>
+<status status="PASS" endtime="20161113 23:26:19.021" starttime="20161113 23:26:15.050"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20161113 23:26:19.548" starttime="20161113 23:26:19.021"></status>
+</kw>
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<doc>Sets the delay in seconds that is waited after each Selenium command.</doc>
+<arguments>
+<arg>${DELAY}</arg>
+</arguments>
+<status status="PASS" endtime="20161113 23:26:19.549" starttime="20161113 23:26:19.549"></status>
+</kw>
+<status status="PASS" endtime="20161113 23:26:19.550" starttime="20161113 23:26:15.049"></status>
+</kw>
+<kw name="Visit blog.ripzery.me">
+<assign>
+<var>${expected}=</var>
+</assign>
+<msg timestamp="20161113 23:26:19.562" level="FAIL">No keyword with name 'Visit blog.ripzery.me' found.</msg>
+<status status="FAIL" endtime="20161113 23:26:19.562" starttime="20161113 23:26:19.562"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<msg timestamp="20161113 23:26:19.578" level="FAIL">Maximum limit of started keywords exceeded.</msg>
+<status status="FAIL" endtime="20161113 23:26:19.579" starttime="20161113 23:26:19.578"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:19.579" starttime="20161113 23:26:19.577"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:19.579" starttime="20161113 23:26:19.577"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:19.580" starttime="20161113 23:26:19.576"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:19.580" starttime="20161113 23:26:19.576"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:19.580" starttime="20161113 23:26:19.575"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:19.580" starttime="20161113 23:26:19.575"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:19.580" starttime="20161113 23:26:19.575"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:19.581" starttime="20161113 23:26:19.574"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:19.581" starttime="20161113 23:26:19.574"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:19.581" starttime="20161113 23:26:19.573"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:19.581" starttime="20161113 23:26:19.573"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:19.582" starttime="20161113 23:26:19.573"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:19.582" starttime="20161113 23:26:19.572"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:19.582" starttime="20161113 23:26:19.571"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:19.582" starttime="20161113 23:26:19.570"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:19.583" starttime="20161113 23:26:19.570"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:19.583" starttime="20161113 23:26:19.569"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:19.583" starttime="20161113 23:26:19.569"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:19.583" starttime="20161113 23:26:19.569"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:19.583" starttime="20161113 23:26:19.568"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:19.583" starttime="20161113 23:26:19.568"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:19.584" starttime="20161113 23:26:19.568"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:19.584" starttime="20161113 23:26:19.568"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:19.584" starttime="20161113 23:26:19.567"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:19.584" starttime="20161113 23:26:19.567"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:19.584" starttime="20161113 23:26:19.567"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:19.584" starttime="20161113 23:26:19.566"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:19.585" starttime="20161113 23:26:19.566"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:19.585" starttime="20161113 23:26:19.566"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:19.585" starttime="20161113 23:26:19.565"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:19.585" starttime="20161113 23:26:19.565"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:19.585" starttime="20161113 23:26:19.565"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:19.586" starttime="20161113 23:26:19.564"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:19.586" starttime="20161113 23:26:19.564"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:19.586" starttime="20161113 23:26:19.563">Maximum limit of started keywords exceeded.</status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:19.587" critical="yes" starttime="20161113 23:26:15.048">No keyword with name 'Visit blog.ripzery.me' found.
+
+Also teardown failed:
+Maximum limit of started keywords exceeded.</status>
+</test>
+<test id="s1-t8" name="[8] Todo Item Should Be Remove From List">
+<kw type="setup" name="Open Website" library="keywords">
+<kw name="Open Browser" library="Selenium2Library">
+<doc>Opens a new browser instance to given URL.</doc>
+<arguments>
+<arg>${SERVER}</arg>
+<arg>${BROWSER}</arg>
+</arguments>
+<msg timestamp="20161113 23:26:19.591" level="INFO">Opening browser 'Chrome' to base url 'https://ripzery.me/todo'</msg>
+<status status="PASS" endtime="20161113 23:26:23.547" starttime="20161113 23:26:19.590"></status>
+</kw>
+<kw name="Maximize Browser Window" library="Selenium2Library">
+<doc>Maximizes current browser window.</doc>
+<status status="PASS" endtime="20161113 23:26:24.114" starttime="20161113 23:26:23.547"></status>
+</kw>
+<kw name="Set Selenium Speed" library="Selenium2Library">
+<doc>Sets the delay in seconds that is waited after each Selenium command.</doc>
+<arguments>
+<arg>${DELAY}</arg>
+</arguments>
+<status status="PASS" endtime="20161113 23:26:24.115" starttime="20161113 23:26:24.114"></status>
+</kw>
+<status status="PASS" endtime="20161113 23:26:24.116" starttime="20161113 23:26:19.589"></status>
+</kw>
+<kw name="Typing" library="keywords">
+<arguments>
+<arg>Visit blog.ripzery.me</arg>
+</arguments>
+<kw name="Input Text" library="Selenium2Library">
+<doc>Types the given `text` into text field identified by `locator`.</doc>
+<arguments>
+<arg>inputTodo</arg>
+<arg>${word}</arg>
+</arguments>
+<msg timestamp="20161113 23:26:24.119" level="INFO">Typing text 'Visit blog.ripzery.me' into text field 'inputTodo'</msg>
+<status status="PASS" endtime="20161113 23:26:25.145" starttime="20161113 23:26:24.118"></status>
+</kw>
+<status status="PASS" endtime="20161113 23:26:25.146" starttime="20161113 23:26:24.117"></status>
+</kw>
+<kw name="Click Add" library="keywords">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>addTodo</arg>
+</arguments>
+<msg timestamp="20161113 23:26:25.147" level="INFO">Clicking button 'addTodo'.</msg>
+<status status="PASS" endtime="20161113 23:26:26.286" starttime="20161113 23:26:25.147"></status>
+</kw>
+<status status="PASS" endtime="20161113 23:26:26.287" starttime="20161113 23:26:25.146"></status>
+</kw>
+<kw name="Click Todo By Id" library="keywords">
+<arguments>
+<arg>0</arg>
+</arguments>
+<kw name="Click Element" library="Selenium2Library">
+<doc>Click element identified by `locator`.</doc>
+<arguments>
+<arg>todoItem${todoId}</arg>
+</arguments>
+<msg timestamp="20161113 23:26:26.290" level="INFO">Clicking element 'todoItem0'.</msg>
+<status status="PASS" endtime="20161113 23:26:26.882" starttime="20161113 23:26:26.289"></status>
+</kw>
+<status status="PASS" endtime="20161113 23:26:26.883" starttime="20161113 23:26:26.288"></status>
+</kw>
+<kw name="Click Remove" library="keywords">
+<kw name="Click Button" library="Selenium2Library">
+<doc>Clicks a button identified by `locator`.</doc>
+<arguments>
+<arg>removeTodo</arg>
+</arguments>
+<msg timestamp="20161113 23:26:26.887" level="INFO">Clicking button 'removeTodo'.</msg>
+<status status="PASS" endtime="20161113 23:26:27.995" starttime="20161113 23:26:26.885"></status>
+</kw>
+<status status="PASS" endtime="20161113 23:26:27.996" starttime="20161113 23:26:26.883"></status>
+</kw>
+<kw name="Element Should Not Contain" library="Selenium2Library">
+<doc>Verifies element identified by `locator` does not contain text `expected`.</doc>
+<arguments>
+<arg>Visit blog.ripzery.me</arg>
+</arguments>
+<msg timestamp="20161113 23:26:27.997" level="FAIL">Keyword 'Selenium2Library.Element Should Not Contain' expected 2 to 3 arguments, got 1.</msg>
+<status status="FAIL" endtime="20161113 23:26:27.998" starttime="20161113 23:26:27.996"></status>
+</kw>
+<kw type="teardown" name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<kw name="Close Browser" library="keywords">
+<msg timestamp="20161113 23:26:28.023" level="FAIL">Maximum limit of started keywords exceeded.</msg>
+<status status="FAIL" endtime="20161113 23:26:28.023" starttime="20161113 23:26:28.021"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:28.023" starttime="20161113 23:26:28.021"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:28.024" starttime="20161113 23:26:28.020"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:28.024" starttime="20161113 23:26:28.020"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:28.024" starttime="20161113 23:26:28.019"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:28.024" starttime="20161113 23:26:28.019"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:28.024" starttime="20161113 23:26:28.018"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:28.024" starttime="20161113 23:26:28.018"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:28.025" starttime="20161113 23:26:28.017"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:28.025" starttime="20161113 23:26:28.017"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:28.025" starttime="20161113 23:26:28.017"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:28.025" starttime="20161113 23:26:28.016"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:28.025" starttime="20161113 23:26:28.015"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:28.025" starttime="20161113 23:26:28.013"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:28.026" starttime="20161113 23:26:28.012"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:28.026" starttime="20161113 23:26:28.012"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:28.026" starttime="20161113 23:26:28.011"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:28.026" starttime="20161113 23:26:28.011"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:28.027" starttime="20161113 23:26:28.011"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:28.027" starttime="20161113 23:26:28.010"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:28.027" starttime="20161113 23:26:28.010"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:28.027" starttime="20161113 23:26:28.009"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:28.027" starttime="20161113 23:26:28.009"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:28.027" starttime="20161113 23:26:28.008"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:28.028" starttime="20161113 23:26:28.008"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:28.028" starttime="20161113 23:26:28.007"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:28.028" starttime="20161113 23:26:28.006"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:28.028" starttime="20161113 23:26:28.005"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:28.028" starttime="20161113 23:26:28.004"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:28.028" starttime="20161113 23:26:28.004"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:28.029" starttime="20161113 23:26:28.002"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:28.029" starttime="20161113 23:26:28.001"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:28.029" starttime="20161113 23:26:28.000"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:28.029" starttime="20161113 23:26:27.999"></status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:28.030" starttime="20161113 23:26:27.998">Maximum limit of started keywords exceeded.</status>
+</kw>
+<status status="FAIL" endtime="20161113 23:26:28.030" critical="yes" starttime="20161113 23:26:19.587">Keyword 'Selenium2Library.Element Should Not Contain' expected 2 to 3 arguments, got 1.
+
+Also teardown failed:
+Maximum limit of started keywords exceeded.</status>
+</test>
+<status status="FAIL" endtime="20161113 23:26:28.033" starttime="20161113 23:25:38.342"></status>
 </suite>
 <statistics>
 <total>
-<stat fail="1" pass="0">Critical Tests</stat>
-<stat fail="1" pass="0">All Tests</stat>
+<stat fail="8" pass="0">Critical Tests</stat>
+<stat fail="8" pass="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat fail="1" id="s1" name="Tests" pass="0">Tests</stat>
+<stat fail="8" id="s1" name="Tests" pass="0">Tests</stat>
 </suite>
 </statistics>
 <errors>

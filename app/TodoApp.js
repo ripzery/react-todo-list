@@ -44,7 +44,7 @@ class TodoApp extends React.Component {
                     <Paper style={styles.paper} zDepth={2}>
                         <div>
                             <TodoTitle />
-                            <TodoInput max={20} ref="todo" update={this.update}/>
+                            <TodoInput max={30} ref="todo" update={this.update}/>
                             <List>
                                 {items}
                             </List>
