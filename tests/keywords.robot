@@ -44,5 +44,5 @@ Is Todo Exist
     [Arguments]     ${todoId}
     Element Should Be Visible      todoItem${todoId}
 
-Close Browser
+Close Website
     Close Browser

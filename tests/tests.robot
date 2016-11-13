@@ -1,7 +1,7 @@
 *** Settings ***
 Resource  keywords.robot
 Test Setup      Open Website
-Test Teardown   Close Browser
+Test Teardown   Close Website
 
 *** Test Cases ***
 [1] Todo List Should Be Empty
@@ -28,21 +28,21 @@ Test Teardown   Close Browser
     Element Should Be Disabled  addTodo
 
 [6] Todo Item Should Increment When Added
-    ${expected}=   ${1}
+    ${expected}=    Set Variable    1
     Typing  Visit blog.ripzery.me
     Click Add
     ${total}=     Get Total Todo
     Should Be Equal As Numbers     ${total}    ${expected}
 
 [7] Last Todo Item Should Be Match Added Word
-    ${expected}=   Visit blog.ripzery.me
-    Typing  Visit blog.ripzery.me
+    ${expected}=    Set Variable   Visit blog.ripzery.me
+    Typing   ${expected}
     Click Add
-    Element Text Should Be    //label[@id=todoItem0 div]    ${expected}
+    Element Text Should Be    //label[@id='todoItem0']    ${expected}
 
 [8] Todo Item Should Be Remove From List
     Typing  Visit blog.ripzery.me
     Click Add
     Click Todo By Id  0
     Click Remove
-    Element Should Not Contain  Visit blog.ripzery.me
+    Page Should Not Contain  Visit blog.ripzery.me
